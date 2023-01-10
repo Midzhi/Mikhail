@@ -1,0 +1,3 @@
+SELECT item_id, product_name
+FROM sulpak
+WHERE item_id = (SELECT COUNT(item_id) / 2 FROM sulpak);

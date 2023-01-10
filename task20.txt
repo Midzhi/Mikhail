@@ -1,0 +1,2 @@
+SELECT product_name FROM kivano
+WHERE category_id = 2;

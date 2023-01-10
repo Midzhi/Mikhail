@@ -1,0 +1,3 @@
+UPDATE produsers
+SET produser_company = 'Microsoft'
+WHERE produser_company = 'Nokia' and produser_country = 'USA';

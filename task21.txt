@@ -1,0 +1,14 @@
+command1
+
+SELECT * FROM sulpak
+WHERE price BETWEEN ((SELECT round(AVG(price)) FROM sulpak) - 2000)
+AND ((SELECT round(AVG(price)) FROM sulpak) + 2000);
+
+Либо command2
+(узнаем среднее значение цены)
+
+SELECT round(AVG(price)) FROM sulpak;
+ответ 57550
+
+SELECT * FROM sulpak
+WHERE price BETWEEN 55550 AND 59550;

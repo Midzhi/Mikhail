@@ -1,0 +1,3 @@
+SELECT DISTINCT produser_company AS product_company
+FROM produsers INNER JOIN kivano ON produsers.produser_id = kivano.produser_id
+WHERE kivano.price > (SELECT ROUND(AVG(kivano.price)) FROM kivano);

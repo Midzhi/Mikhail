@@ -1,7 +1,6 @@
 from random import randint as rdt
 from random import randrange as rdg
 from datetime import datetime as dt
-
 import psycopg2
 
 bd_password = input("Введите пароль от Базы Данных: ")
